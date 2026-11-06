@@ -98,7 +98,32 @@ ed62890 docs: ajoute un changelog de base
 ### Partie 4 — Branches et fusions
 
 9. Quelles branches ont été fusionnées dans `main` ?  
+
+commande :
+```bash
+git branch -a --merged main
+```
+
+Résultat :
+```
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/feature/header
+  remotes/origin/feature/login
+  remotes/origin/hotfix/typo
+  remotes/origin/main
+```
+
 10. Quelle branche **n'a pas été fusionnée** ? Pourquoi, selon vous ? 
+
+Commande :
+```
+git branch -a --no-merged main
+```
+Résultat :
+```
+remotes/origin/experiment/dark-mode
+```
 
 ### Partie 5 — Analyse du contenu
 
